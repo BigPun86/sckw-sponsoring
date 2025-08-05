@@ -809,7 +809,7 @@ export default function RenovierungPage() {
             gemeinsam können wir unserem Kultplatz das geben, was er verdient.
           </DonationText>
 
-          <DonationTracker realTime={false} />
+          <DonationTracker realTime={true} />
 
           <DonationButtons>
             <DonationButton

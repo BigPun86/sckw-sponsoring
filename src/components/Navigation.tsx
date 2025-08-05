@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link, useLocation } from "react-router-dom";
+import logo from "../assets/logo.png";
 
 const NavContainer = styled.nav`
   background: #fff;
@@ -22,6 +23,11 @@ const Logo = styled.div`
   display: flex;
   align-items: center;
   gap: 0.5rem;
+`;
+
+const LogoImage = styled.img`
+  height: 40px;
+  width: auto;
 `;
 
 const LogoText = styled.h1`
@@ -73,9 +79,12 @@ export default function Navigation() {
   return (
     <NavContainer>
       <NavContent>
-        <Logo>
-          <LogoText>SCKW</LogoText>
-        </Logo>
+        <NavLink to="/">
+          <Logo>
+            <LogoImage src={logo} alt="SCKW Logo" />
+            <LogoText>SC Konstanz-Wollmatingen e. V.</LogoText>
+          </Logo>
+        </NavLink>
 
         <NavLinks>
           <NavLink
